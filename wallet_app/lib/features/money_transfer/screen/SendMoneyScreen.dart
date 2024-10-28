@@ -81,7 +81,7 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
                             text: 'Your Total Balance: ',
                             style: AppTypography.bodyText(const Color(0xFF2f343f)), // Gaya teks utama
                             children: <TextSpan>[
-                              TextSpan(
+                              const TextSpan(
                                 text: '\$2,539 ',
                                 style: TextStyle(color: Colors.black)),
                               TextSpan(
