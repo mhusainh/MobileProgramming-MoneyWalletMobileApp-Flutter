@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "wallet_app",
+            "cwd": "wallet_app",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/config/main_app.dart"
+        },
+        {
+            "name": "wallet_app (profile mode)",
+            "cwd": "wallet_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/config/main_app.dart"
+        },
+        {
+            "name": "wallet_app (release mode)",
+            "cwd": "wallet_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/config/main_app.dart"
+        }
+    ]
+}
