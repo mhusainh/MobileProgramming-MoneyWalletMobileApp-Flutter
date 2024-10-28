@@ -142,5 +142,3 @@ Kontribusi sangat diterima! Jika Anda ingin berkontribusi pada proyek ini:
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ---
-
-Semoga file `README.md` ini membantu Anda dalam mendokumentasikan proyek Anda di GitHub. Jangan lupa untuk menyesuaikan bagian seperti URL repositori dan informasi lisensi sesuai kebutuhan Anda.
