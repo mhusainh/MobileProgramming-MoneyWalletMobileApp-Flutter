@@ -9,22 +9,31 @@ class BarButtonComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Color(0xFFF4F7FE),
-        borderRadius: BorderRadius.circular(30),
-        border: Border.all(color: Color.fromARGB(255, 219, 222, 230), width: 1.5),
-      ),
-      padding: EdgeInsets.all(6),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          _buildButton("Wallet", 0),
-          SizedBox(width: 11.25),
-          _buildButton("Send", 1),
-          SizedBox(width: 11.25),
-          _buildButton("Request", 2),
-        ],
+    double screenWidth = MediaQuery.of(context).size.width;
+    double adjustedWidth = screenWidth - 32; // Lebar disesuaikan agar memiliki padding di kiri dan kanan
+    double spacing = adjustedWidth * 0.029; // Jarak antar tombol berdasarkan lebar yang sudah disesuaikan
+
+    return Center(
+      child: Container(
+        width: adjustedWidth,
+        decoration: BoxDecoration(
+          color: const Color(0xFFF4F7FE),
+          borderRadius: BorderRadius.circular(30),
+          border: Border.all(
+              color: const Color.fromARGB(255, 219, 222, 230), width: 1.5),
+        ),
+        padding: const EdgeInsets.all(6),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            _buildButton("Wallet", 0),
+            SizedBox(width: spacing),
+            _buildButton("Send", 1),
+            SizedBox(width: spacing),
+            _buildButton("Request", 2),
+          ],
+        ),
       ),
     );
   }
@@ -34,8 +43,8 @@ class BarButtonComponent extends StatelessWidget {
     return GestureDetector(
       onTap: () => onTap(index),
       child: AnimatedContainer(
-        duration: Duration(milliseconds: 200),
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
         decoration: BoxDecoration(
           color: isSelected ? AppColors.button : Colors.transparent,
           borderRadius: BorderRadius.circular(30),
@@ -43,7 +52,7 @@ class BarButtonComponent extends StatelessWidget {
               ? [
                   BoxShadow(
                     color: AppColors.button.withOpacity(0.5),
-                    offset: Offset(0, 4),
+                    offset: const Offset(0, 4),
                     blurRadius: 8,
                   ),
                 ]
@@ -52,7 +61,7 @@ class BarButtonComponent extends StatelessWidget {
         child: Text(
           label,
           style: TextStyle(
-            color: isSelected ? AppColors.textColor2 : Color(0xFF5e5f62),
+            color: isSelected ? AppColors.textColor2 : const Color(0xFF5e5f62),
             fontWeight: FontWeight.normal,
             fontSize: 18,
           ),
