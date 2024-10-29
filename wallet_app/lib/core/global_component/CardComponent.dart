@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:wallet_app/constants/color.dart';
-import 'package:wallet_app/global_component/Typography.dart';
+import 'package:wallet_app/core/constants/color.dart';
+import 'package:wallet_app/core/global_component/Typography.dart';
 
 class CardComponent extends StatelessWidget {
   final String bankName;

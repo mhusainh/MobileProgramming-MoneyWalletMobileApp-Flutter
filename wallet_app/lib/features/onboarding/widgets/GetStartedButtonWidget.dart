@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_app/constants/color.dart';
-import 'package:wallet_app/global_component/ButtonComponent.dart';
+import 'package:wallet_app/core/constants/color.dart';
+import 'package:wallet_app/core/global_component/ButtonComponent.dart';
 
 class GetStartedButtonWidget extends StatelessWidget {
   @override

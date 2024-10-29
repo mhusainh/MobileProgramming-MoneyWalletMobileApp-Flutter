@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_app/global_component/BarButtonComponent.dart';
+import 'package:wallet_app/core/global_component/BarButtonComponent.dart';
 
 class BarButtonWidget extends StatefulWidget {
   final int selectedIndex;

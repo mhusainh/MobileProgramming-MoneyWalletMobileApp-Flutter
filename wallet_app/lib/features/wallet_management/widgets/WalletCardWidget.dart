@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_app/global_component/CardComponent.dart';
+import 'package:wallet_app/core/global_component/CardComponent.dart';
 import 'package:wallet_app/data/wallet/dummy/DummyWallet.dart';
 
 class WalletCardWidget extends StatelessWidget {

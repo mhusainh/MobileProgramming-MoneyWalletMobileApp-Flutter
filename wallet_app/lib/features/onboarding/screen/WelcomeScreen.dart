@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_app/constants/string.dart';
-import 'package:wallet_app/global_component/Typography.dart';
+import 'package:wallet_app/core/constants/string.dart';
+import 'package:wallet_app/core/global_component/Typography.dart';
 import '../widgets/GetStartedButtonWidget.dart';
 import '../widgets/WelcomeIllustrationWidget.dart';
 

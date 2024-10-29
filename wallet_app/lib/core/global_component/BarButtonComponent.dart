@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_app/constants/color.dart';
+import 'package:wallet_app/core/constants/color.dart';
 
 class BarButtonComponent extends StatelessWidget {
   final int selectedIndex;

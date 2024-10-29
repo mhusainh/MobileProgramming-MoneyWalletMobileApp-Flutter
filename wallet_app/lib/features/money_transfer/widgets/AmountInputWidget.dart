@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_app/global_component/Typography.dart';
+import 'package:wallet_app/core/global_component/Typography.dart';
 
 class AmountInputWidget extends StatelessWidget {
   final String amount;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../features/onboarding/screen/WelcomeScreen.dart';
-import '../features/wallet_management/screen/WalletScreen.dart';
-import '../features/money_transfer/screen/SendMoneyScreen.dart';
+import '../../features/onboarding/screen/WelcomeScreen.dart';
+import '../../features/wallet_management/screen/WalletScreen.dart';
+import '../../features/money_transfer/screen/SendMoneyScreen.dart';
 
 class RouteUtils {
   static Route<dynamic> generateRoute(RouteSettings settings) {

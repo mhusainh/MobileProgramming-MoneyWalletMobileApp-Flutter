@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import '../utils/route_utils.dart';
 
-void main() {
-  runApp(MyApp());
-}
 
 class MyApp extends StatelessWidget {
   @override

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:wallet_app/constants/color.dart';
-import 'package:wallet_app/global_component/BarButtonComponent.dart';
+import 'package:wallet_app/core/constants/color.dart';
+import 'package:wallet_app/core/global_component/BarButtonComponent.dart';
 import 'package:wallet_app/features/wallet_management/widgets/WalletCardWidget.dart';
 import 'package:wallet_app/features/wallet_management/widgets/TotalBalanceWidget.dart';
 import 'package:wallet_app/features/wallet_management/widgets/AddWalletButtonWidget.dart';
-import 'package:wallet_app/global_component/Typography.dart';
+import 'package:wallet_app/core/global_component/Typography.dart';
 
 class WalletScreen extends StatefulWidget {
   @override
