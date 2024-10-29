@@ -4,6 +4,10 @@
 
 Sebuah aplikasi dompet digital sederhana yang dibuat menggunakan Flutter. Aplikasi ini memungkinkan pengguna untuk mengelola dompet, melakukan transfer uang, dan fitur lainnya. Saat ini, aplikasi belum terintegrasi dengan database dan menggunakan data statis.
 
+https://dribbble.com/shots/20743358-FinPay-Money-Wallet-Mobile-App
+
+![Desain App](https://github.com/user-attachments/assets/6bbb7a60-00cb-474c-beef-2d2b3bc9cee6)
+
 ## Fitur
 
 - **Onboarding**: Layar sambutan untuk memperkenalkan aplikasi kepada pengguna baru.
