@@ -10,8 +10,10 @@ class BarButtonComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double adjustedWidth = screenWidth - 32; // Lebar disesuaikan agar memiliki padding di kiri dan kanan
-    double spacing = adjustedWidth * 0.029; // Jarak antar tombol berdasarkan lebar yang sudah disesuaikan
+    double adjustedWidth = screenWidth -
+        32; // Lebar disesuaikan agar memiliki padding di kiri dan kanan
+    double spacing = adjustedWidth *
+        0.029; // Jarak antar tombol berdasarkan lebar yang sudah disesuaikan
 
     return Center(
       child: Container(

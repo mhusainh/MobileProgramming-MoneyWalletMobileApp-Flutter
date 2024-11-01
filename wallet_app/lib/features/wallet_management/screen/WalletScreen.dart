@@ -34,26 +34,37 @@ class _WalletScreenState extends State<WalletScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false, // Remove back button
-        title: Row(
+      backgroundColor: AppColors.backgroundColor, // Menetapkan background putih
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(80.0),
+        child: Column(
           children: [
-            const CircleAvatar(
-              backgroundImage: NetworkImage('https://example.com/avatar.jpg'),
-              radius: 20,
+            const SizedBox(height: 20.0),
+            AppBar(
+              automaticallyImplyLeading: false,
+              title: Row(
+                children: [
+                  const CircleAvatar(
+                    backgroundImage:
+                        NetworkImage('https://example.com/avatar.jpg'),
+                    radius: 20,
+                  ),
+                  const SizedBox(width: 10),
+                  Text('Hello, Steven!', style: AppTypography.name()),
+                ],
+              ),
+              backgroundColor:
+                  AppColors.backgroundColor, // Menetapkan AppBar juga putih
+              elevation: 0,
+              actions: [
+                IconButton(
+                  icon: const Icon(Icons.search, color: Colors.black),
+                  onPressed: () {},
+                ),
+              ],
             ),
-            const SizedBox(width: 10),
-            Text('Hello, Steven!', style: AppTypography.name()),
           ],
         ),
-        backgroundColor: AppColors.backgroundColor,
-        elevation: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search, color: Colors.black),
-            onPressed: () {},
-          ),
-        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -61,7 +72,6 @@ class _WalletScreenState extends State<WalletScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 20),
-            // Simply include the TotalBalanceWidget
             TotalBalanceWidget(),
             const SizedBox(height: 10),
             Center(
@@ -81,7 +91,8 @@ class _WalletScreenState extends State<WalletScreen> {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.fromLTRB(
+            16, 0, 16, 10), // Padding bawah ditambahkan di sini
         child: AddWalletButtonWidget(),
       ),
     );

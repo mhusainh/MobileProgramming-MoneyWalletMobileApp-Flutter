@@ -21,21 +21,27 @@ class KeypadWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildKey('1'), _buildKey('2'), _buildKey('3'),
+              _buildKey('1'),
+              _buildKey('2'),
+              _buildKey('3'),
             ],
           ),
           const SizedBox(height: 15),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildKey('4'), _buildKey('5'), _buildKey('6'),
+              _buildKey('4'),
+              _buildKey('5'),
+              _buildKey('6'),
             ],
           ),
-         const SizedBox(height: 15),
+          const SizedBox(height: 15),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _buildKey('7'), _buildKey('8'), _buildKey('9'),
+              _buildKey('7'),
+              _buildKey('8'),
+              _buildKey('9'),
             ],
           ),
           const SizedBox(height: 15),

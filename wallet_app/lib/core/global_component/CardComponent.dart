@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:wallet_app/core/constants/color.dart';
+import 'package:wallet_app/core/constants/icons.dart';
 import 'package:wallet_app/core/global_component/Typography.dart';
 
 class CardComponent extends StatelessWidget {
@@ -55,7 +56,7 @@ class CardComponent extends StatelessWidget {
                 ),
               ),
               SvgPicture.asset(
-                'assets/icons/nfc.svg',
+                AppIcons.nfc,
                 height: 24,
                 color: AppColors.textColor2,
                 placeholderBuilder: (context) =>
@@ -67,7 +68,7 @@ class CardComponent extends StatelessWidget {
 
           // Ikon Chip
           SvgPicture.asset(
-            'assets/icons/cardChip.svg',
+            AppIcons.cardChip,
             height: 55,
             placeholderBuilder: (context) =>
                const Icon(Icons.error, color: Colors.red),
@@ -93,7 +94,7 @@ class CardComponent extends StatelessWidget {
                 style: AppTypography.bodyText(Colors.grey[300]),
               ),
               SvgPicture.asset(
-                'assets/icons/masterCardLogo.svg',
+                AppIcons.masterCardLogo,
                 height: 28,
                 placeholderBuilder: (context) =>
                    const Icon(Icons.error, color: Colors.red),

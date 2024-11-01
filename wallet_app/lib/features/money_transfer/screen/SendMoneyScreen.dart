@@ -51,6 +51,7 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
         child: Column(
           children: [
             // BarButtonWidget di bagian atas
+            const SizedBox(height: 16.0),
             BarButtonWidget(
               selectedIndex: _selectedIndex,
               onItemTapped: _onItemTapped,
@@ -79,15 +80,16 @@ class _SendMoneyScreenState extends State<SendMoneyScreen> {
                         RichText(
                           text: TextSpan(
                             text: 'Your Total Balance: ',
-                            style: AppTypography.bodyText(const Color(0xFF2f343f)), // Gaya teks utama
+                            style: AppTypography.bodyText(
+                                const Color(0xFF2f343f)), // Gaya teks utama
                             children: <TextSpan>[
                               const TextSpan(
-                                text: '\$2,539 ',
-                                style: TextStyle(color: Colors.black)),
+                                  text: '\$2,539 ',
+                                  style: TextStyle(color: Colors.black)),
                               TextSpan(
-                                text: '(available)',
-                                style: AppTypography.bodyText(const Color(0xFF2f343f))
-                              ),
+                                  text: '(available)',
+                                  style: AppTypography.bodyText(
+                                      const Color(0xFF2f343f))),
                             ],
                           ),
                         ),
