@@ -9,6 +9,9 @@ https://dribbble.com/shots/20743358-FinPay-Money-Wallet-Mobile-App
 ![Desain App](https://github.com/user-attachments/assets/6bbb7a60-00cb-474c-beef-2d2b3bc9cee6)
 
 
+[Money Wallet Mobile App](https://github.com/user-attachments/assets/0bd45547-7af0-47d1-bf95-6aae9e61da06)
+
+
 ## Fitur
 
 - **Onboarding**: Layar sambutan untuk memperkenalkan aplikasi kepada pengguna baru.
